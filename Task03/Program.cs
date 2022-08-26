@@ -10,6 +10,8 @@ PrintArray(numbers);
 double min = Int32.MaxValue;
 double max = Int32.MinValue;
 
+void FindMaxMinDifference(double[] numbers)
+{
 for (int z = 0; z < numbers.Length; z++)
 {
     if (numbers[z] > max)
@@ -24,6 +26,8 @@ for (int z = 0; z < numbers.Length; z++)
 
 Console.WriteLine($"всего {numbers.Length} чисел. Максимальное значение = {max}, минимальное значение = {min}");
 Console.WriteLine($"Разница между максимальным и минимальным значением = {max - min}");
+}
+FindMaxMinDifference(numbers);
 
 void FillArrayRandomNumbers(double[] numbers)
 {
