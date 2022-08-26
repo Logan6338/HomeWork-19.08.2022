@@ -9,11 +9,16 @@ Console.WriteLine("Вот наш массив: ");
 PrintArray(numbers);
 int count = 0;
 
+void FindEvenCount(int[] numbers)
+{
 for (int z = 0; z < numbers.Length; z++)
 if (numbers[z] % 2 == 0)
 count++;
 
 Console.WriteLine($"всего {numbers.Length} чисел, {count} из них чётные");
+
+}
+FindEvenCount(numbers);
 
 void FillArrayRandomNumbers(int[] numbers)
 {
